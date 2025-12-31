@@ -20,26 +20,30 @@ Retrieves relevant information
 
 Generates accurate answers using an LLM
 
-Project Structure (Explanation)
+**Project Structure (Explanation)**
 
-data/
+**data/**
+
 This folder contains the company policy PDF documents used by the chatbot as a knowledge source.
 The .gitkeep file is included to ensure the folder is tracked by GitHub even when no PDFs are present.
 
-faiss_db/
+**faiss_db/**
+
 Stores the FAISS vector database, which holds embeddings generated from the policy documents.
 These embeddings enable fast and accurate document retrieval during chatbot queries.
 A .gitkeep file is used to preserve the folder structure in the repository.
 
-input.py
+**input.py**
+
 Handles PDF ingestion and preprocessing.
 It loads policy documents, splits text into chunks, generates embeddings, and stores them in the FAISS vector database.
 
-c.py
+**c.py**
 The main chatbot execution file.
 It loads the vector database, processes user queries, retrieves relevant document chunks, and generates responses using an LLM.
 
-requirements.txt
+**requirements.txt**
+
 Lists all Python dependencies required to run the project, ensuring easy setup and reproducibility.
 
 README.md
