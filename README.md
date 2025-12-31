@@ -38,7 +38,8 @@ A .gitkeep file is used to preserve the folder structure in the repository.
 Handles PDF ingestion and preprocessing.
 It loads policy documents, splits text into chunks, generates embeddings, and stores them in the FAISS vector database.
 
-**c.py**
+**streamlit run c.py**
+
 The main chatbot execution file.
 It loads the vector database, processes user queries, retrieves relevant document chunks, and generates responses using an LLM.
 
